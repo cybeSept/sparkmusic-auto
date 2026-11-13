@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- 对应 el-tag type="success" -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#E1F3D8"
+                android:padding="8dp"
+                android:text="这个是由 Android XML 创建的模板，仅仅作为演示使用"
+                android:textColor="#67C23A"
+                android:textSize="14sp" />
+
+        <!-- 对应 el-form-item label="卡密" -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="卡密"
+                android:textSize="14sp" />
+
+        <EditText
+                android:id="@+id/et_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入卡密"
+                android:inputType="text" />
+
+        <!-- 对应 el-form-item label="姓名" -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="姓名"
+                android:textSize="14sp" />
+
+        <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入姓名"
+                android:inputType="textPersonName" />
+
+        <!-- 对应 el-form-item label="性别" -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="性别"
+                android:textSize="14sp" />
+
+        <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@null"
+                    android:padding="8dp"
+                    android:text="男" />
+
+            <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:button="@null"
+                    android:padding="8dp"
+                    android:text="女" />
+        </RadioGroup>
+
+        <!-- 对应按钮组 -->
+    <!-- 对应 el-form-item 容器 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+        <!-- 对应第一个 el-button：保存 -->
+        <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="保存"
+                android:textSize="14sp" />
+
+        <!-- 对应第二个 el-button：运行脚本 -->
+        <Button
+                android:id="@+id/btn_run_script"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运行脚本"
+                android:textSize="14sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
